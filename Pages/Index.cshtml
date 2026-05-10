@@ -1,0 +1,80 @@
+﻿@page
+@{
+    Layout = null;   // removes default layout for pure frontend feel
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>My Simple Site</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #4facfe, #00f2fe);
+            color: #333;
+        }
+
+        .container {
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        h1 {
+            color: white;
+            font-size: 40px;
+        }
+
+        p {
+            font-size: 18px;
+            color: #f0f0f0;
+        }
+
+        .btn {
+            margin-top: 20px;
+            padding: 12px 25px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            background-color: white;
+            color: #007bff;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: #e6e6e6;
+        }
+
+        footer {
+            position: fixed;
+            bottom: 10px;
+            width: 100%;
+            text-align: center;
+            color: white;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Welcome 🚀</h1>
+        <p>This is a simple frontend page using ASP.NET Razor.</p>
+
+        <button class="btn" onclick="showMessage()">Click Me</button>
+    </div>
+
+    <footer>
+        © 2026 My Dummy Site
+    </footer>
+
+    <script>
+        function showMessage() {
+            alert("Hello from your .NET frontend!");
+        }
+    </script>
+
+</body>
+</html>
